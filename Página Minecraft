@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Prova Minecraft</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		
+		<style>
+			#imagem{
+				width: 400px;
+				height: 400px;
+			}
+			#m{
+				
+				display: flex;
+				align-items: center;
+				flex-direction: column;
+				
+			}
+			body{
+				background-image: url(https://s2.dmcdn.net/v/FzR2t1NMPk-2a7TW7/x1080);
+				background-repeat: no-repeat;
+				background-size: auto;
+				text-shadow: black;
+				background-attachment: fixed;
+
+			}
+			
+			button{
+				background: linear-gradient(green,brown,blue);
+				color: white;
+				padding: .5em 1em;
+				width: 100px;
+			}
+			#an{
+				width: 400px;
+				height: 400px;
+
+			}
+
+		</style>
+
+	</head>	
+	<body>
+		<section id="m">
+			<h1>Minérios Minecraft</h1>
+			<h3>Mundo Normal</h3>
+			<img id="imagem" src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/8/88/Iron_Ore_JE2_BE2.png/revision/latest?cb=20190512022834" alt="ferro"  >
+			<br>
+			<button value="ferro" id="ferro">Ferro</button>
+			<button value="diamante" id="diamante">Diamante</button>
+			<button value="redstone" id="redstone">Redstone</button>
+			<button value="ouro" id="ouro">Ouro</button>
+			<button value="lapis" id="lapis">Lápis-lazúli</button>
+			<button value="esmeralda" id="esmeralda">Esmeralda</button>
+		</section>
+		<section id="animal">
+			<h1>Animais Minecraft</h1>
+			<img id="an" src="https://static.wikia.nocookie.net/minecraft_br_gamepedia/images/6/6a/WhiteSheep.png/revision/latest?cb=20110829154411">
+			<br>
+			<button value="ovelha" id="ovelha">ovelha</button>
+			<button value="vaca" id="vaca">vaca</button>
+			<button value="galinha" id="galinha">galinha</button>
+			<button value="porco" id="porco">porco</button>
+		</section>
+		<script>
+			$("#ferro").on("click", () => {
+				$("#imagem").attr("src","https://static.wikia.nocookie.net/minecraft_gamepedia/images/8/88/Iron_Ore_JE2_BE2.png/revision/latest?cb=20190512022834")
+			});
+			$("#diamante").on("click", () => {
+				$("#imagem").attr("src","https://static.wikia.nocookie.net/minecraft_gamepedia/images/b/b5/Diamond_Ore_JE3_BE3.png/revision/latest/scale-to-width-down/150?cb=20200309195154")
+			});
+			$("#redstone").on("click", () => {
+				$("#imagem").attr("src","https://vignette.wikia.nocookie.net/minecraft/images/5/5e/Min%C3%A9rio_de_Redstone.png/revision/latest/scale-to-width-down/340?cb=20140419193425&path-prefix=pt-br")
+			});
+			$("#ouro").on("click", () => {
+				$("#imagem").attr("src","https://static.wikia.nocookie.net/minecraft_gamepedia/images/b/b9/Gold_Ore_JE3_BE2.png/revision/latest/scale-to-width-down/150?cb=20200224211658")
+			});
+			$("#lapis").on("click", () => {
+				$("#imagem").attr("src","https://static.wikia.nocookie.net/minecraft/images/f/fd/LapisLazuliNew.png/revision/latest/scale-to-width-down/340?cb=20190907232527")
+			});
+			$("#esmeralda").on("click", () => {
+				$("#imagem").attr("src","https://images.uncyc.org/pt/9/9f/Emerald_Ore.png")
+			});
+			$("#ovelha").on("click", () => {
+				$("#an").attr("src","https://static.wikia.nocookie.net/minecraft_br_gamepedia/images/6/6a/WhiteSheep.png/revision/latest?cb=20110829154411")
+			});
+			$("#porco").on("click", () => {
+				$("#an").attr("src","https://static.wikia.nocookie.net/minecraft_br_gamepedia/images/3/30/Pig.png/revision/latest?cb=20191027181458")
+			});
+			$("#galinha").on("click", () => {
+				$("#an").attr("src","https://vignette.wikia.nocookie.net/minecraft-pocket-edition/images/d/d3/150px-Chicken.png/revision/latest/scale-to-width-down/340?cb=20141210234638&path-prefix=pt-br")
+			});
+			$("#vaca").on("click", () => {
+				$("#an").attr("src","https://static.wikia.nocookie.net/minecraft_br_gamepedia/images/8/84/Cow.png/revision/latest/scale-to-width-down/150?cb=20190716001931")
+			});
+	</script>
+	
+	</body>
+	
+
+
+</html>
