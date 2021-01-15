@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Conhecendo o Univerço</title>
+        <link rel="stylesheet" href="atvd.css/atvd.css">     
+    </head>
+    <body>
+        <div>
+            <h1>Conhecendo novas galáxias</h1>
+            <p>Pesquise algumas informaçâo sobre nossa galáxia e descreva aqui</p>
+        </div>
+        <div>
+            <h2>indo até marte</h2>
+            <img src="imagens/Marte.jpeg" alt="Planeta Vermelho" width="200" light="200">
+        </div>
+        <div>
+            <h2>A lua e suas características</h2>
+        </div>
+        <div>
+            <ul>
+                <li>A lua é um satélite natural do planeta Terra</li>
+                <li> o satélite natural do planeta Terra, distanciados por aproximadamente 384.405 km</li>
+                <li>Ao longo da superfície lunar não são identificados gases, como nitrogênio, oxigênio ou mesmo água.</li>
+            </ul>
+        </div>
+    </body>
+</html>
+
+
+   	---css---
+
+
+
+body{
+    background-color: black;
+}
+body div{background-color: MediumOrchid;
+    font-size: 18px;
+}
+
+body div h1{ text-align: center;
+            font-size: 18px;
+
+}
+
+div h2{ background-color: yellow;
+    font-size: 14xp;
+
+}
+
+div ul{list-style-type: circle;color: black;
+
+}
+
+div h1 p{  font-size: 12x;
+    list-style-type: lower-roman
+
+}
